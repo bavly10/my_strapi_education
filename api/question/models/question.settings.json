@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Que_Text": {
+      "type": "text",
+      "unique": false,
+      "required": true
+    },
+    "Que_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Type_Question": {
+      "type": "string"
+    },
+    "Degree": {
+      "type": "integer",
+      "required": true
+    },
+    "desc_text": {
+      "type": "string",
+      "required": true
+    },
+    "multi_chooses": {
+      "via": "question",
+      "collection": "multi-choose"
+    }
+  }
+}

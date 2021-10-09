@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/multi-chooses",
+      "handler": "multi-choose.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/multi-chooses/count",
+      "handler": "multi-choose.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/multi-chooses/:id",
+      "handler": "multi-choose.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/multi-chooses",
+      "handler": "multi-choose.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/multi-chooses/:id",
+      "handler": "multi-choose.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/multi-chooses/:id",
+      "handler": "multi-choose.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

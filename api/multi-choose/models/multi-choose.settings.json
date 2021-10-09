@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "multi_chooses",
+  "info": {
+    "name": "Multi_choose",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Choose_Text": {
+      "type": "string",
+      "required": true
+    },
+    "Choose_val": {
+      "type": "string",
+      "required": true
+    },
+    "question": {
+      "model": "question",
+      "via": "multi_chooses"
+    }
+  }
+}

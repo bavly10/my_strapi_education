@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exams",
+  "info": {
+    "name": "exam",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "private": false
+    },
+    "Mark": {
+      "type": "decimal",
+      "required": true
+    },
+    "date_OF_exam": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
